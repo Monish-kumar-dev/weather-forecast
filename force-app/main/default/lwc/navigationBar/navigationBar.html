@@ -1,0 +1,29 @@
+<template>
+    <div class="slds-grid navClass">
+        <!-- Amazon Logo -->
+        <div class="amazon-logo slds-col slds-size_4-of-12">
+            <a href="#">
+                <img src="https://www.pngmart.com/files/23/Amazon-Logo-White-PNG-Image.png" alt="Amazon Logo">
+            </a>
+        </div>
+
+        <!-- User Info -->
+        <div class="slds-col slds-size_5-of-12 slds-grid slds-align-middle user-section">
+            <div class="userInfo slds-grid slds-align-middle">
+                <div class="userLogo">
+                    <lightning-icon icon-name="action:user" size="large"></lightning-icon>
+                </div>
+                <div class="userName">Username</div>
+            </div>
+        </div>
+
+        <!-- Cart Section -->
+        <div class="slds-col slds-size_3-of-12 slds-grid slds-align-middle cartSection">
+            <div class="cartDiv">
+                <lightning-icon icon-name="utility:cart" size="large"></lightning-icon>
+            </div>
+            <div class="cart">{cartNumber}</div>
+        </div>
+    </div>
+    
+</template>

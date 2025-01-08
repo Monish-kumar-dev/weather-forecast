@@ -1,41 +1,26 @@
-/* Add padding and center alignment for the card */
-.slds-card {
-    margin: 0 auto;
-    max-width: 400px; /* Adjust width for a better look */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Style the input field */
-.slds-input {
-    border-radius: 5px;
-    border: 1px solid #d8dde6; /* Neutral border color */
-    padding: 10px;
-}
-
-/* Style the button */
-.lightning-button_brand {
-    background-color: #1589ee; /* Salesforce primary blue */
-    border-radius: 5px;
-    color: white;
+.weather-header {
+    font-size: 24px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-/* Style the weather details container */
-.c-container {
-    background-color: #f4f6f9; /* Light background for weather details */
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+.weather-info {
+    font-size: 18px;
+    margin: 5px 0;
 }
 
-/* Bold text for titles */
-.slds-text-title_bold {
-    font-size: 16px;
-    color: #3e3e3c; /* Neutral dark text color */
-}
-
-/* Add spacing between layout items */
-.lightning-layout-item {
+.weather-icon {
+    width: 50px;
+    height: 50px;
     margin-bottom: 10px;
 }

@@ -1,18 +1,47 @@
-# Salesforce DX Project: Next Steps
+# 🌦️ Weather Forcast
+## 📖 About  
+The **Weather Information Center** is a Salesforce Lightning Web Component (LWC) project that provides real-time weather details for any city using the **OpenWeather API**. This project integrates backend logic with a clean and responsive user interface to deliver an intuitive and visually appealing user experience.  
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+---
 
-## How Do You Plan to Deploy Your Changes?
+## ✨ Features  
+### 🌟 Core Functionalities  
+- **City-Specific Weather Details**: Displays weather information such as:  
+  - Temperature 🌡️  
+  - Feels Like 🌬️  
+  - Humidity 💧  
+  - Pressure 📏  
+  - Min & Max Temperatures 🌡️📉📈  
+  - General Climate Condition ☁️  
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+- **Dynamic Weather-Based Videos**:  
+  - Autoplaying, muted, and looping videos that align with the current weather condition.  
 
-## Configure Your Salesforce DX Project
+- **Responsive Design**:  
+  - Equal-sized and well-aligned components for a consistent user experience.  
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+### 🔗 API Integration  
+- **OpenWeather API**:  
+  - Fetches real-time weather details for any city worldwide.  
 
-## Read All About It
+### 🚀 Technologies Used  
+- **Salesforce Lightning Web Components (LWC)**  
+- **Apex** for backend logic and API integration  
+- **SLDS (Salesforce Lightning Design System)** for responsive and clean UI  
+- **Static Resources** for video assets  
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+---
+
+## 📂 Project Structure  
+```plaintext
+|-- force-app
+|   |-- main
+|       |-- default
+|           |-- aura
+|           |-- lwc
+|               |-- Weather
+|                   |-- Weather.js            # JavaScript logic for the component
+|                   |-- Weather.html          # Template file for the UI
+|                   |-- Weather.css           # Custom styling
+|           |-- staticresources
+|               |-- MyVideos                 # Folder containing weather-based videos
